@@ -76,7 +76,7 @@ const CodeEditor = ({ width, height }) => {
       className={`flex flex-col justify-around border p-3 border-[#333333] bg-[#1E1E1E] dark:bg-gray-800 dark:border-gray-600`}
     >
       <div
-        className={`flex w-full h-[50px] bg-[#1E1E1E] border-b border-[#333333]`}
+        className={`flex w-full h-[50px] sm:bg-[#1E1E1E] border-b border-[#333333]`}
       >
         <select
           value={language}
@@ -98,6 +98,7 @@ const CodeEditor = ({ width, height }) => {
         value={code}
         onChange={handleEditorChange}
         onMount={handleEditorDidMount}
+        className="w-full h-full"
       />
     </div>
   );
