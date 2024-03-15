@@ -31,7 +31,7 @@ const CodeEditor = ({ width, height }) => {
   const { id: problemId } = useParams();
 
   useEffect(() => {
-    const s = io("http://localhost:8000");
+    const s = io("https://realtime-collaborative-codeeditor.onrender.com");
     setSocket(s);
 
     return () => {
